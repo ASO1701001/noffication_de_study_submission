@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">通知de勉強</string>
+    <string name="Return_Answer_BTN_Str">解説を見る</string>
+    <string name="QA_Title_Text_Str">問題</string>
+    <string name="QA_Answer_0_BTN">ア</string>
+    <string name="QA_Answer_1_BTN">イ</string>
+    <string name="QA_Answer_2_BTN">ウ</string>
+    <string name="QA_Answer_3_BTN">エ</string>
+    <string name="QA_End_BTN_Diskription">戻</string>
+    <string name="QA_Next_BTN_Discription">進</string>
+    <string name="QA_Next_BTN_Str">次へ進む</string>
+    <string name="AA_Next_BTN_Str">問題へ戻る</string>
+    <string name="NDS_INFO_Str">通知で画面を出題し、解答します。</string>
+    <string name="Q_option_txt1_Str">出題方法</string>
+    <string name="way_four_radio_button_Str">四択問題</string>
+    <string name="way_two_radio_button_Str">二択問題</string>
+    <string name="option_title2_Str">通知を行う時間の範囲</string>
+    <string name="O_textView4_Str">分</string>
+    <string name="O_option_title4_Str">通知を行う間隔　</string>
+    <string name="O_title_Text_Str">オプション</string>
+    <string name="A_title_Text_Str">解説</string>
+    <string name="Q_Question_Text_Str">問題文</string>
+    <string name="AA_Seigo_Text_Str">正誤</string>
+    <string name="QA_maru_BTN_Str">◯</string>
+    <string name="QA_batu_BTN_Str">☓</string>
+    <string name="QOA_Title_Text_Str">出題オプション</string>
+    <string name="QOA_option1_Text_Str">試験回選択</string>
+    <string name="QOA_Option2_Text_Str">ジャンル選択</string>
+    <string name="QOA_Option3_Text_Str">問題数選択</string>
+    <string name="QOA_option4_Text">出題方法</string>
+    <string name="SA_Title_Text_Str">統計情報</string>
+    <string name="SA_back_BTN_Disc">戻るボタン</string>
+    <string name="M_Nowloading_Text_Str">NOW LOADING..</string>
+    <string name="QOA_Select_Genres_1_Str">テクノロジ系</string>
+    <string name="QOA_Select_Genres_2_Str">マネジメント系</string>
+    <string name="QOA_Select_Genres_3_Str">ストラテジ系</string>
+    <string name="QOA_Select_Genres_4_Str">計算問題</string>
+    <string name="OA_back_dialog_title">設定を保存しますか？</string>
+    <string name="OA_back_dialog_button_positive">はい</string>
+    <string name="OA_back_dialog_button_negative">いいえ</string>
+    <string-array name="OA_Noffication_Interval_list">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="QOA_Question_Amount_BOX_list">
+        <item>5問</item>
+        <item>10問</item>
+        <item>15問</item>
+        <item>20問</item>
+        <item>25問</item>
+        <item>30問</item>
+        <item>40問</item>
+        <item>50問</item>
+        <item>60問</item>
+        <item>70問</item>
+        <item>80問</item>
+    </string-array>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OptionActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textSize="36sp" android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/O_title_Text_Str"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_revert"
+            android:id="@+id/OA_Back_BTN"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:baselineAligned="false" tools:context=".OptionActivity">
+            <TextView
+                    android:text="ログイン"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/option_title1"
+                    android:textSize="30sp"
+                    android:textAlignment="viewStart"
+            />
+            <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+            <TextView
+                    android:text="通知"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/option_title"
+                    android:textSize="30sp"
+                    android:textAlignment="viewStart"
+            />
+            <CheckBox
+                    android:text="通知de勉強モード"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/OA_NDS_Mode_BTN"
+                    android:textSize="24sp" android:textAlignment="textStart"
+            />
+            <TextView
+                    android:text="@string/NDS_INFO_Str"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/NDS_INFO"
+                    android:textAlignment="textStart" android:textSize="14sp"/>
+            <CheckBox
+                    android:text="画面点灯de勉強モード"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/OA_SDS_Mode_BTN"
+                    android:textSize="24sp"/>
+            <TextView
+                    android:text="画面点灯したときに問題の通知を行います。"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/SDS_INFO"
+                    android:textAlignment="textStart" android:textSize="14sp"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/paddingView1" android:visibility="invisible"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/O_option_txt" android:textSize="30sp"
+                    android:text="@string/Q_option_txt1_Str"/>
+            <RadioGroup
+                    android:id="@+id/way_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/way_four_radio_button">
+
+                <RadioButton
+                        android:id="@+id/way_four_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/way_four_radio_button_Str" android:textSize="20dp"/>
+                <RadioButton
+                        android:id="@+id/way_two_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/way_two_radio_button_Str" android:textSize="20dp"/>
+
+            </RadioGroup>
+            <TextView android:layout_width="match_parent" android:layout_height="20dp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/option_title2_Str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/option_title2"
+                        android:textSize="18sp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                />
+                <TextView
+                        android:text="@string/QA_Title_Text_Str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/OA_Noffication_Time_Between1"
+                        android:textSize="18sp" tools:text="09:00"/>
+                <TextView
+                        android:text="～"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView17" android:textSize="18sp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/OA_Noffication_Time_Between2"
+                        android:textSize="18sp" tools:text="21:00"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/O_option_title4_Str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/option_title4"
+                        android:textSize="20sp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                />
+                <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/OA_Noffication_Interval"
+                />
+                <TextView
+                        android:text="@string/O_textView4_Str"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView14"
+                        android:textSize="20sp" android:textAlignment="textEnd"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

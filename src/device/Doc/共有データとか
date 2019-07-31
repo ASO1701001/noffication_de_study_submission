@@ -1,0 +1,44 @@
+
+・実装済み共有データ
+
+        ・Intent系 (キー値:型(Activity->Activity) : 内容)
+            exam_data:ExamData (QuestionActivity->AnswerActivity) : ExamDataクラスのインスタンス。出題リストと回答リストを渡す
+
+
+        ・共有プリファレンス (キー値:型 -> 内容)
+            user_id:String -> ユーザーID。　OptionActivity で端末とAPサーバに登録し、以降は MainActivity で読み込む
+            NDS_check:Boolean -> 通知de勉強ボタンのチェック判定
+            SDS_check:Boolean -> 画面点灯de勉強ボタンのチェック判定
+            NDS_Interval:Int -> 通知を行う間隔
+            NDS_Start:String -> 通知を行う時間の範囲開始時刻
+            NDS_End:String -> 通知を行う時間の範囲終了時刻
+            NDS_QuestionType -> 1:通常の4択問題  2:まるばつ問題
+
+
+
+
+
+
+・SQLiteDBの使い方
+
+        val helper = SQLiteHelper(this).writableDatabase
+        val db =　[Hoge]OpenHelper(helper)
+        db.[メソッド名]
+        // [] 内は書き換えてね
+
+・ExamDataの使い方
+
+        ・フィールド -> クラス内のコメントに書いてます
+        ・コンストラクタ -> var exam_data = ExamData([id],"[name]","[number]")
+
+・共有プリファレンスの使い方
+
+        ・保存
+            val e : SharedPreferences.Editor = getSharedPreferences("user_data", AppCompatActivity.MODE_PRIVATE).edit()
+            e.putString("[保存データのキー]","[保存データの値]").apply()
+
+        ・読み込み
+            var data = getSharedPreferences("user_data", MODE_PRIVATE).getString("user_id","999999")
+            //ここでは、"user_data"領域から、キー値"user_id"の値を String で取得。（値が存在しなければ、"999999"が返る）
+
+
